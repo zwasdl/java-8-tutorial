@@ -27,23 +27,22 @@ public class JLEExampleMultipleStatements {
 		System.out.println(avarage.avg(array));
 		
 		// with lambda expression
-		 // You can pass multiple statements in lambda expression 
-		
-		IAvarage withLambda = (withLambdaArray) -> {
+		 // You can pass multiple statements in lambda expression
+		IAvarage withLambda = withLambdaArray -> {
 			double sum = 0;
 			int arraySize = withLambdaArray.length;
-			
+
 			System.out.println("arraySize : " + arraySize);
 			for (int i = 0; i < withLambdaArray.length; i++) {
-				sum = sum + withLambdaArray[i];	
+				sum = sum + withLambdaArray[i];
 			}
 			System.out.println("sum : " + sum);
-			
+
 			return (sum/ arraySize);
 		};
-		
 		int[] withLambdaArray = {1,4,6,8,9};
-		System.out.println(withLambda.avg(withLambdaArray)); 
+		System.out.println(withLambda.avg(withLambdaArray));
+
 	}
 	
 }

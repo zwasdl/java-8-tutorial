@@ -18,7 +18,7 @@ public class LambdaExamples {
 		    }
 		});*/
 		
-		Collections.sort(names, (a, b) -> a.compareTo(b));
+		Collections.sort(names, (a, b) -> -a.compareTo(b));
 		
 		for(String str : names){
 			System.out.println(str);

@@ -34,9 +34,7 @@ public class JLEComparatorExample {
 		// Witht lambda expression.
 		// Sort list by age
 
-		Collections.sort(listOfPerson, (Person o1, Person o2) -> {
-			return o1.getAge() - o2.getAge();
-		});
+		Collections.sort(listOfPerson, (o1, o2) -> {return o1.getAge()-o2.getAge();});
 		// Use forEach method added in java 8
 		System.out.println(" sort persons by age in ascending order");
 		listOfPerson.forEach(
